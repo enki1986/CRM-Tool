@@ -8,8 +8,7 @@
     </head>
     <body>
         <nav class="navbar navbar-light bg-dark justify-content-between">
-            <a class="navbar-brand" href="../admin/index.php">
-                <span class
+            <a class="navbar-brand" href="../admin/index.php">                
                       <img src="../files/vikings-logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
                     Viking Beards
                     </a>
