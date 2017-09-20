@@ -25,12 +25,14 @@ function check_user() {
 	
 			//Logge den Benutzer ein
 			$_SESSION['userid'] = $securitytoken_row['user_id'];
+                        
 		}
 	}
 	
 	
 	if(!isset($_SESSION['userid'])) {
-		die('Bitte zuerst <a href="login.php">einloggen</a>');
+		die('Bitte zuerst <a href="../login.php">einloggen</a>');
+                
 	}
 	
 
@@ -45,6 +47,7 @@ function check_user() {
  */
 function is_checked_in() {
 	return isset($_SESSION['userid']);
+        
 }
  
 /**
@@ -76,8 +79,7 @@ function getSiteURL() {
  * Outputs an error message and stops the further exectution of the script.
  */
 function error($error_msg) {
-	include("templates/header.inc.php");
-	include("templates/error.inc.php");
-	include("templates/footer.inc.php");
+	include("../templates/header.inc.php");
+	include("../templates/error.inc.php");
 	exit();
 }

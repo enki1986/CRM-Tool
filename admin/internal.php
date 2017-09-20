@@ -7,7 +7,7 @@ require_once("../inc/functions.inc.php");
 //Der Aufruf von check_user() muss in alle internen Seiten eingebaut sein
 $user = check_user();
 
-include("templates/header.inc.php");
+include("../templates/header.inc.php");
 ?>
 
 <div class="container main-container">

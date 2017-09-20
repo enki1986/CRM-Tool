@@ -1,3 +1,10 @@
+<?php
+session_start();
+require_once '../inc/config.inc.php';
+require_once '../inc/functions.inc.php';
+include '../templates/header.inc.php';;
+?>
+
 <!DOCTYPE html>
 <html lang="de">
     <head>
@@ -7,15 +14,6 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-light bg-dark justify-content-between">
-            <a class="navbar-brand" href="../admin/index.php">                
-                      <img src="../files/vikings-logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                    Viking Beards
-                    </a>
-                    <form class="form-inline">
-                        <a class="btn btn-outline-success" role="button" href="../admin/login_form.php">Login</a>
-                    </form>
-                    </nav>
                    <section id="header">
                         <div class="container-fluid">
                             <div class="row-align-items-center">

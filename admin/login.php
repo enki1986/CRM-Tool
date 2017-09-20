@@ -38,7 +38,7 @@ $email_value = "";
 if (isset($_POST['email']))
     $email_value = htmlentities($_POST['email']);
 
-include("../ templates/header.inc.php");
+include("../templates/header.inc.php");
 ?>
 
 <div class="container small-container-330 form-signin">
@@ -50,26 +50,6 @@ include("../ templates/header.inc.php");
         }
         ?>
 
-        <!DOCTYPE html>
-        <html lang="de">
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                <link rel="stylesheet" href="../css/bootstrap.css">
-                <link src="../js/bootstrap.js">
-            </head>
-            <body>
-                <nav class="navbar navbar-light bg-dark justify-content-between">
-                    <a class="navbar-brand" href="../admin/index.php">
-                        <img src="../files/vikings-logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                        Viking Beards
-                    </a>
-                    <form class="form-inline">
-                        <a class="btn btn-outline-success" role="button" href="../admin/login_form.php">Login</a>
-                    </form>
-                </nav>
-                <div class="wrapper">
-                    <form class="form-signin">
                         <label for="inputEmail" class="sr-only">E-Mail</label>
                         <input type="email" name="email" id="inputEmail" class="form-control" placeholder="E-Mail" value="<?php echo $email_value; ?>" required autofocus>
                         <label for="inputPassword" class="sr-only">Passwort</label>
